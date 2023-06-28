@@ -25,7 +25,7 @@ describe('Login Page', () => {
     })
   })
   it('Invalid login with invalid credentials', () => {
-    LG.enterUsername('abc@gmail.com')
+    LG.enterUsername('abcd@gmail.com')
     LG.enterPassword('123456789')
     LG.clickLoginButton()
     cy.wrap('Login Failed').should('eq', 'Login Failed')
